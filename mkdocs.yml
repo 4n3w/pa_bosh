@@ -1,0 +1,20 @@
+site_name: BOSH
+theme:
+    name: mkdocs
+    custom_dir: bosh_theme
+pages:
+- Home: 'index.md'
+- Guides: 
+  - Overview: 'guides/overview.md'
+  - Setting up the BOSH CLI: 'guides/lab-1.md'
+- Resources: 
+  - Overview: 'resources/overview.md'
+  - Releases: 'resources/releases.md'
+  - Stemcells: 'resources/stemcells.md'
+- Docs: 
+  - Overview: 'docs/overview.md'
+extra_css: [css/extra.css]
+extra:
+    version: 0.0.1
+    links:
+        - https://bosh.io

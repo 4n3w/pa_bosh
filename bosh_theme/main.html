@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+
+<!-- <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+    <div class="md-sidebar__scrollwrap">
+      <div class="md-sidebar__inner">
+        {% include "nav.html" %}
+      </div>
+    </div>
+</div> -->
+{% block content %}
+    {% if page.meta.hide_toc %}
+        <div class="col-md-12" role="main">{% include "content.html" %}</div>
+    {% else %}
+        <div class="col-md-3">{% include "toc.html" %}</div>
+        <div class="col-md-9" role="main">{% include "content.html" %}</div>
+    {% endif %}
+{% endblock %}
+
+{{ config.extra.version }}
+
+{% if config.extra.links %}
+  <ul>
+  {% for link in config.extra.links %}
+      <li>{{ link }}</li>
+  {% endfor %}
+  </ul>
+{% endif %}

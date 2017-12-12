@@ -1,0 +1,83 @@
+body {
+    background-image: none;
+    background-color: white;
+}
+.navbar-default {
+    background-color: #34302d;
+    background-image: none;
+    border-top-color: #00bce8;
+    border-top-width: thick;
+}
+
+.navbar-default
+.navbar-brand {
+    background-image: url(../img/CFF-BOSH-Mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color: transparent;
+    text-shadow: 0 1px 0 rgba(0,0,0,0);
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    left: 40%;
+}
+
+.navbar-default 
+.navbar-brand:hover {
+    color: transparent;
+}
+
+.navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #00bce8;
+}
+
+.navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a{
+    color: #fff;
+    background-color: #00bce8;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #fff;
+    background-color: #00bce8;
+}
+
+@media (min-width: 768px){
+    
+    .navbar-default
+    .navbar-brand {
+        background-image: url(../img/CFF-BOSH-Full-White.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        color: transparent;
+        text-shadow: 0 1px 0 rgba(0,0,0,0);
+        -webkit-transition: background-image 0.5s; /* Safari */
+        transition: background-image 0.5s;
+    }
+
+    .navbar-default 
+    .navbar-brand:hover {
+        background-image: url(../img/CFF-BOSH-Full-Color.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        color: transparent; 
+        -webkit-transition: background-image 0.5s; /* Safari */
+        transition: background-image 0.5s;
+    }
+    .navbar-nav>li>a {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .navbar-brand {
+        float: left;
+        padding: 25px 25px;
+        font-size: 37px;
+        line-height: 20px;
+    }
+}
+.nav.navbar-nav li:first-child{
+    display: none;
+}
