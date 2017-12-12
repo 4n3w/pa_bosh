@@ -2,6 +2,10 @@ body {
     background-image: none;
     background-color: white;
 }
+
+ul.nav .main {
+    font-weight: normal;
+}
 .navbar-default {
     background-color: #34302d;
     background-image: none;

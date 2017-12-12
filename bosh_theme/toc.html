@@ -2,8 +2,8 @@
     <ul class="nav bs-sidenav">
     {%- for nav_item in nav %}
         {% if nav_item.active%}
-            {%- for nav_item in nav_item.children %}
-            <li class="main {% if nav_item.active %}active{% endif %}"><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></li>
+            {%- for child_nav_item in nav_item.children %}
+            <li class="main {% if child_nav_item.active %}active{% endif %}"><a href="{{ child_nav_item.url }}">{{ child_nav_item.title }}</a></li>
             <!-- {%- for nav_item in nav_item.children %}
                 <li><a href="{{ nav_item.url }}">{{ nav_item.title }}</a></li>
             {%- endfor %} -->
