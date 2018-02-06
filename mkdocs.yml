@@ -4,32 +4,43 @@ theme:
     custom_dir: bosh_theme
 pages:
 - Home: 'index.md'
-- Guides: 
-  - Overview: 'guides/overview.md'
-  - Setting up the BOSH CLI: 'guides/lab-1.md'
-  - Examining a BOSH Stemcell: 'guides/lab-2.md'
-  - Upload a BOSH Stemcell: 'guides/lab-3.md'
-  - Create and Upload a BOSH Cloud-Config: 'guides/lab-4.md'
-  - Upload a BOSH Release: 'guides/lab-5.md'
-  - Examine a BOSH Release: 'guides/lab-6.md'
-  - Deploying a BOSH Release: 'guides/lab-7.md'
-  - Accessing a BOSH Managed Instance: 'guides/lab-8.md'
-  - BOSH Instance Internals: 'guides/lab-9.md'
-  - Reconfiguring BOSH Deployments: 'guides/lab-10.md'
-  - Authoring a BOSH Release: 'guides/lab-11.md'
-  - Deploy Zookeeper: 'guides/lab-12.md'
-  - BOSH Errands: 'guides/lab-13.md'
-  - BOSH Release Upgrades: 'guides/lab-14.md'
-  - BOSH Runtime-Config & Add-ons: 'guides/lab-15.md'
-  - BOSH Stemcell Upgrades: 'guides/lab-16.md'
+- Learn: 
+  - The Story of BOSH: 'learn/learn-1.md'
+  - BOSH - What is it?: 'learn/learn-2.md'
+  - BOSH - Stemcells: 'learn/learn-3.md'
+  - BOSH - Cloud Providers: 'learn/learn-4.md'
+  - BOSH - Releases: 'learn/learn-5.md'
+  - BOSH - Manifests: 'learn/learn-6.md'
+- Do: 
+  - Overview: 'do/overview.md'
+  - Setting up the BOSH CLI: 'do/demo-1.md'
+  - Examining a BOSH Stemcell: 'do/demo-2.md'
+  - Upload a BOSH Stemcell: 'do/demo-3.md'
+  - Create and Upload a BOSH Cloud-Config: 'do/demo-4.md'
+  - Upload a BOSH Release: 'do/demo-5.md'
+  - Examine a BOSH Release: 'do/demo-6.md'
+  - Deploying a BOSH Release: 'do/demo-7.md'
+  - Accessing a BOSH Managed Instance: 'do/demo-8.md'
+  - BOSH Instance Internals: 'do/demo-9.md'
+  - Reconfiguring BOSH Deployments: 'do/demo-10.md'
+  - Authoring a BOSH Release: 'do/demo-11.md'
+  - Deploy Zookeeper: 'do/demo-12.md'
+  - BOSH Errands: 'do/demo-13.md'
+  - BOSH Release Upgrades: 'do/demo-14.md'
+  - BOSH Runtime-Config & Add-ons: 'do/demo-15.md'
+  - BOSH Stemcell Upgrades: 'do/demo-16.md'
 - Resources: 
   - Overview: 'resources/overview.md'
   - Releases: 'resources/releases.md'
   - Stemcells: 'resources/stemcells.md'
-- Docs: 
-  - Overview: 'docs/overview.md'
 extra_css: [css/extra.css]
 extra:
     version: 0.0.1
     links:
         - https://bosh.io
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.tasklist
+repo_name: GitHub
+repo_url: https://github.com/Oskoss/pa_bosh
